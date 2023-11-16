@@ -1,0 +1,116 @@
+/* styling the body */
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: linear-gradient(77deg, #dfdfde, #a2798f, #d7c6cf, #8caba8, #ebdada);
+}
+
+/* styling the container div */
+
+.container {
+    width: 300px;
+    height: 200px;
+    border: 1px solid #a2798f;
+    padding: 10px;
+    background: #dfdfde;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    align-items: center;
+}
+
+/* styling the header */
+
+h3 {
+    text-align: center;
+}
+
+/* stylying the container for all rating icons */
+
+.icon-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+
+/* syling the icon */
+
+.icon {
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 500ms ease-in-out;
+    cursor: pointer;
+}
+
+#unsatisfied {
+    border: 1px solid #a2798f;
+}
+
+#neutral {
+    border: 1px solid #fff;
+}
+
+#satisfied {
+    border: 1px solid #8caba8;
+}
+
+#unsatisfied:hover {
+    background: #a2798f;
+}
+
+#neutral:hover {
+    background: #fff;
+}
+
+#satisfied:hover {
+    background: #8caba8;
+}
+
+#unsatisfied:hover, #neutral:hover, #satisfied:hover {
+    opacity: 0.9;
+    scale: 1.4;
+}
+
+/* active state of each icon */
+
+.active-unsatisfied {
+    background: #a2798f;
+}
+
+.active-neutral {
+    background: #fff;
+}
+
+.active-satisfied {
+    background: #8caba8;
+}
+
+/* styling the submit button */
+
+button {
+    width: 40%;
+    border-radius: 5px;
+    padding: 10px;
+    color: #fff;
+    margin-top: 20px;
+    border: 1px solid #8caba8;
+    background: #8caba8;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* styling the submit button reveiw page */
+
+.rated {
+    text-align: center;
+    display: none;
+    transition: 1000ms ease-in;
+}
+
+
